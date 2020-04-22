@@ -23,7 +23,6 @@ get_matrix <- function(objects, mu) {
 
 objects_count <- 300
 
-# Generation of test data
 n <- 300
 sigma1 <- matrix(c(2, 0, 0, 2),2,2)
 sigma2 <- matrix(c(1, 0, 0, 1),2,2)
@@ -35,7 +34,7 @@ xy2 <- mvrnorm(n = objects_count, mu2, sigma2)
 
 xl <- rbind(cbind(xy1, 1), cbind(xy2, 2))
 
-# Ðèñóåì îáó÷àþùóþ âûáîðêó
+
 colors <- c("blue2", "green3")
 plot(xl[ , 1], xl[ , 2], pch = 21, bg = colors[xl[ ,3]], asp = 1, xlab = "x", ylab = "y")
 
